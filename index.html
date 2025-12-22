@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-grid.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<script src="/index.js"></script>
+
+</head>
+<body class="">
+    <header class="header">
+        <div class="logo">
+            <img id="themeIconimg" src="/img/icon JoelMCLL blanco.png" name="logo"alt="logo">
+        </div>
+
+        <nav class="Secciones">
+            <a href="#sobre-mi">Sobre Mi</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyecto">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+
+<div class="lang-switch">
+    <button class="lang-btn" id="langToggle" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-label">ES</span>
+        <img id="langArrow" src="/img/Flecha abajo.png" alt="" width="12" height="12">
+    </button>
+    <div class="lang-menu" id="langMenu" role="menu" aria-hidden="true">
+        <button class="lang-option" data-lang="en" role="menuitem">EN</button>
+    </div>
+</div>
+
+    <div class="Dark-Light" id="themeToggle">
+      <button class="" style="cursor: pointer; border: none; background-color: #ffffff00;"><img  id="themeIcon" src="/img/Icon Luna.png" alt="Modo Oscuro" ></button>
+    </div>
+    <!-- MENÚ HAMBURGUESA -->
+    <div class="menu-hamburguesa">
+      <div class="menu-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+</div>
+</header>
+
+ <div class="menu-overlay" id="overlay"></div>
+
+  <!-- MENÚ DE NAVEGACIÓN (debe estar FUERA del header) -->
+  <nav class="secciones-burger" id="menu">
+    <a href="#sobre-mi" class="menu-link">Sobre Mi</a>
+    <a href="#habilidades" class="menu-link">Habilidades</a>
+    <a href="#proyecto" class="menu-link">Proyectos</a>
+    <a href="#contacto" class="menu-link">Contacto</a>
+  </nav>
+
+<main class="main-body">
+    <h1>Bienvenido<span style="color: var(--title-color);">!</span> Soy <span style="color: var(--title-color)">Joel Mancilla</span></h1>
+    <div class="seccion-perfil">
+        <img class="imagen-perfil" src="/img/Imagen Perfil.png" alt="Imagen Perfil Joel Mancilla">
+        <p>Diseñador UI UX</p>
+        <div class="social-icons">
+           <a href="http://www.linkedin.com/in/joel-mancilla-aa95a0341"><img src="/img/Icon LinkedIn.png" alt="Enlace Linkedin" width="30px" height="30px"></a>
+           <a href="https://www.instagram.com/uiux.jm/"><img src="/img/Icon Instagram.png" alt="Enlace Intagram Joel" width="30px" height="30px"></a>
+           <a href="https://github.com/JoelMancilla?tab=repositories"><img src="/img/icon Github.png" alt="Enlace Repositorio Github" width="30px" height="30px"></a> 
+        </div>
+    </div>
+    
+    <section class="Seccion-sobreMi animate-on-scroll fade-in-up" id="sobre-mi">
+        <h2>Sobre Mi</h2>
+        <p><span style="font-weight: 700;">Soy un entusiasta del diseño y la tecnología:</span>  Diseñador de Interfaces y Experiencia de Usuario con formación técnica en Programación.
+         <br> <br> <span style="font-weight: 700;">M</span>i pasión está en innovar y bocetar ideas para dar vida a interfaces de productos digitales que no solo sean visualmente atractivas, sino también intuitivas y funcionales. Creo que el núcleo de un gran producto está en las personas, por lo que estudio constantemente sus reacciones y comportamientos al interactuar con él, transformando esas observaciones en insights valiosos.
+           Estoy en una búsqueda activa de mejorar mis conocimientos día a día, fusionando la perspectiva creativa del diseño con el pensamiento lógico del desarrollo para crear soluciones digitales coherentes, viables y centradas en el usuario.
+           <br> <br> 
+           Gracias por visitar mi pequeño rincón de la web. ¡Estoy emocionado de compartir más de mi carrera contigo!
+        </p>
+        <button onclick="DescargarPDF()">Descargar CV<img class="btn-download-img" src="/img/Icon Descargar.png" alt="" width="20px" height="20px"></button>
+    </section>
+
+    <section class="Seccion-Habilidades animate-on-scroll fade-in-up" id="habilidades">
+        <div> 
+         <h2>Habilidades</h2>
+         <p>Mi Caja de herramientas y cosas que puedo hacer.</p>
+        </div>
+       <article class="desarrollo-web">
+        <p>Desarrollo Web</p>
+
+        <div>
+         <img src="/img/Icon HTML.png" alt="Icono Html" >
+         <p class="nombre-icon"><span style="opacity: 0;">.</span>HTML</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon CSS.png" alt="Icono css" >
+         <p class="nombre-icon"><span style="opacity: 0;">..</span>CSS</p>
+        </div>
+
+        <div>
+         <img src="/img/icon js.png" alt="Icono Javascript">
+         <p class="nombre-icon">Javascript</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon React.png" alt="Icono ReactJS" >
+         <p class="nombre-icon">ReactJS</p>
+        </div>
+       </article>
+
+       <article class="DiseñoUIUX animate-on-scroll fade-in-up">
+        <p >Diseño UI UX</p>
+
+        <div>
+         <img src="/img/Icon figma.png" alt="Icono Figma" >
+         <p class="nombre-icon">Figma</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon photoshop.png" alt="Icono Photoshop">
+         <p class="nombre-icon">Photoshop</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon ilustrador.png" alt="Icono Ilustrator" >
+         <p class="nombre-icon">Ilustrator</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon XD.png" alt="Icono Adobe XD" >
+         <p class="nombre-icon">Adobe XD</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Sketch.png" alt="Icono Sketch" >
+         <p class="nombre-icon">Sketch</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Miro.png" alt="Icono Miro" >
+         <p class="nombre-icon">Miro</p>
+        </div>
+       </article>   
+       
+       <article class="extra">
+        <p class="Extra-title">Extra</p>
+        <div>
+         <img src="/img/Icon Git.png" alt="Icono Git" >
+         <p class="nombre-icon"><span style="opacity: 0;">...</span>Git</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Docker.png" alt="Icono Docker">
+         <p class="nombre-icon">Docker</p>
+        </div>
+       </article>
+    </section>
+
+     <section class="Seccion-Proyectos animate-on-scroll fade-in-up" id="proyecto">
+        <h2>Proyectos</h2>
+        <p>Una Seleccion de pequeños proyectos que contruí </p>
+        <article>
+            <div>
+                <img src="/img/Imagen Proyecto Agro.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Agro XP</h3>
+             <p>AgroXP es un proyecto que realize en la prueba final de mi carrera. Se trata de una pagina web agronomo con el fin de mostrar los servicios y productos agricolas, tambien un formato de contacto simple. La pagina tiene un deafio de cambiar el diseño cotidiano de (marron, verde), este proyecto fue desarrollado con las tecnologias como  <strong>Figma</strong> y <strong>Photoshop</strong> para el diseño (Html, Css, Javascript) Para el desarrollo</p>
+             <div>
+                <img src="/img/Icon HTML.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon CSS.png" alt="" width="30px" height="30px"> 
+                <img src="/img/icon js.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon photoshop.png" alt="" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">Ver en repositorio</button>
+             <button class="Ver-Figma" id="">Ver en Figma</button>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="/img/Instituto web 2.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Instituto SSC Frames</h3>
+             <p>Instituto Superior San Carlos, Es la realizacion de un prototipo web sobre un instituto cuyas funcionalidades pricipales son las inscripciones a travez de formularios y compras de cursos. estre prototipo fue vendido a un Programador De la Universidad Nacional de Cordoba. este proyecto fue desarrollado con las tecnologias como  <strong>(Figma, Miro, Photoshop)</strong> </p>
+             <div>
+                <img src="/img/Icon Miro.png" alt="Miro" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="Figma" width="30px" height="30px"> 
+                <img src="/img/Icon photoshop.png" alt="Photoshop" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">Ver en repositorio</button>
+             <button class="Ver-Figma">Ver en Figma</button>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="/img/Web Space 2.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Web Space</h3>
+             <p>Web Space es un pequeño proyecto sobre la creacion de un menu diferente al resto, Este menu se presenta con Opciones que llevan fotografias o iconos esparcidos sobre la pantalla, y estan diseñado para pequeñas paginas web con el propocito de tener opciones mas faciles de reconocer. este proyecto fue desarrollado con las tecnologias como <strong>(Figma, Illustrator)</strong> y <strong>(Html Css y Javascript)</strong> </p>
+             <div>
+                <img src="/img/Icon HTML.png" alt="HTML" width="30px" height="30px"> 
+                <img src="/img/Icon CSS.png" alt="CSS" width="30px" height="30px"> 
+                <img src="/img/icon js.png" alt="Javascript" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="Figma" width="30px" height="30px"> 
+                <img src="/img/Icon ilustrador.png" alt="Ilustrator" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">Ver en repositorio</button>
+             <button class="Ver-Figma">Ver en Figma</button>
+            </div>
+        </article>
+    </section> 
+
+    <section class="Seccion-Contacto animate-on-scroll fade-in-up" id="contacto">
+        <h2>Contacto</h2>
+        <p>Contactame y te respondere a la brevedad.</p>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" class="I-Nombre" type="text" maxlength="100" placeholder="Tu Nombre" required />
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" class="I-Email" type="email" maxlength="100" placeholder="@Ejemplo.com" required />
+            </div>
+            <div class="form-row">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="I-Mensaje" maxlength="500" placeholder="Escribe tu mensaje" required></textarea>
+            </div>
+            <div class="form-row buttons">
+                <button class="I-Enviar" type="submit" name="enviar" >Enviar</button>
+            </div>
+        </form>
+
+        <div class="contact-method">
+            <label for="">Contactame por Whatsapp</label>
+            <a href="https://wa.me/5493877667141" target="_blank"><button class="contact-btn1"><img src="/img/Icon Whatsapp.png" alt="" width="50px" height="50px">Mi Whatsapp</button></a>
+        </div>
+
+        
+        <div class="contact-method">
+            <label for="">Contactame por LinkedIn</label>
+           <a href="http://www.linkedin.com/in/joel-mancilla-aa95a0341" target="_blank"></a><button class="contact-btn2"><img src="/img/Icon LinkedIn.png" alt="" width="50px" height="50px">Mi LinkedIn</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <cite>© 2022 - 2025 | Diseño y programación con Joel Mancilla</cite>
+</footer>
+
+    
+<div class="grid-overlay">
+  <div></div><div></div><div></div><div></div><div></div><div></div>
+  <div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+</body>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar EmailJS
+    emailjs.init('lfGfrq8iiPzU6Tlka');
+    
+    const form = document.querySelector('.contact-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const boton = this.querySelector('.I-Enviar');
+        const botonTextOriginal = boton.textContent;
+        
+        // Mostrar estado de carga
+        boton.textContent = 'Enviando...';
+        boton.disabled = true;
+        
+        try {
+          console.log('Enviando formulario...');
+          
+          // Obtener los datos del formulario para depuración
+          const formData = new FormData(form);
+          const formObject = Object.fromEntries(formData.entries());
+          console.log('Datos del formulario:', formObject);
+          
+          // Enviar el formulario
+          const response = await emailjs.sendForm(
+            'default_service', 
+            'template_xmkwojl', 
+            form
+          );
+          
+          console.log('Éxito!', response);
+          alert('¡Mensaje enviado correctamente!');
+          form.reset();
+          
+        } catch (error) {
+          // Depuración detallada del error
+          console.error('Error detallado:', error);
+          console.error('Código de error:', error.status);
+          console.error('Texto del error:', error.text);
+          
+          // Mensajes específicos según el tipo de error
+          let mensajeError = 'Error al enviar. Intenta nuevamente.';
+          
+          if (error.status === 400) {
+            mensajeError = 'Error en la configuración del servicio. Verifica tus credenciales.';
+          } else if (error.status === 401) {
+            mensajeError = 'Clave de API inválida o expirada.';
+          } else if (error.status === 403) {
+            mensajeError = 'Servicio deshabilitado o sin permisos.';
+          } else if (error.status === 429) {
+            mensajeError = 'Demasiados intentos. Espera unos minutos.';
+          } else if (error.status === 500) {
+            mensajeError = 'Error del servidor de EmailJS. Intenta más tarde.';
+          }
+          
+          alert('Error: ' + mensajeError);
+          
+        } finally {
+          // Restaurar el botón
+          boton.textContent = botonTextOriginal;
+          boton.disabled = false;
+        }
+      });
+    }
+  });
+</script>
+</html>

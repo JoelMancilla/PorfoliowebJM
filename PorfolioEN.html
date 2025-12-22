@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap-grid.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<script src="/index.js"></script>
+</head>
+<body class="">
+    <header class="header">
+      <div class="logo">
+          <img id="themeIconimg" src="/img/icon JoelMCLL blanco.png" name="logo"alt="logo" >
+      </div>
+
+      <nav class="Secciones" >
+          <a href="#sobre-mi">About me</a>
+          <a href="#habilidades">Skills</a>
+          <a href="#proyecto">Projects</a>
+          <a href="#contacto">Contacts</a>
+      </nav>
+
+      <div class="lang-switch">
+          <button class="lang-btn" id="langToggle" aria-haspopup="true" aria-expanded="false">
+              <span class="lang-label">EN</span>
+              <img id="langArrow" src="/img/Flecha abajo.png" alt="" width="12" height="12">
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu" aria-hidden="true">
+              <button class="lang-option" data-lang="es" role="menuitem">ES</button>
+          </div>
+      </div>
+
+      <div class="Dark-Light" id="themeToggle">
+        <button class="" style="cursor: pointer; border: none; background-color: #ffffff00;"><img  id="themeIcon" src="/img/Icon Luna.png" alt="Modo Oscuro" width="40px" height="40px"></button>
+      </div>
+
+        <!-- MENÚ HAMBURGUESA -->
+      <div class="menu-hamburguesa">
+        <div class="menu-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+</header>
+
+ <div class="menu-overlay" id="overlay"></div>
+
+  <!-- MENÚ DE NAVEGACIÓN (debe estar FUERA del header) -->
+  <nav class="secciones-burger" id="menu">
+    <a href="#sobre-mi" class="menu-link">About me</a>
+    <a href="#habilidades" class="menu-link">Skills</a>
+    <a href="#proyecto" class="menu-link">Projects</a>
+    <a href="#contacto" class="menu-link">Contacts</a>
+  </nav>
+
+<main class="main-body">
+
+    <h1>Welcome<span style="color: var(--title-color);">!</span> I´m <span style="color: var(--title-color)">Joel Mancilla</span></h1>
+    <div class="seccion-perfil">
+        <img class="imagen-perfil" src="/img/Imagen Perfil.png" alt="Imagen Perfil Joel Mancilla">
+        <p>Diseñador UI UX</p>
+        <div class="social-icons">
+            <a href=""><img src="/img/Icon LinkedIn.png" alt="Enlace Linkedin" width="30px" height="30px"></a>
+            <a href="https://www.instagram.com/uiux.jm/"><img src="/img/Icon Instagram.png" alt="Enlace Intagram Joel" width="30px" height="30px"></a>
+           <a href=""><img src="/img/icon Github.png" alt="Enlace Repositorio Github" width="30px" height="30px"></a> 
+        </div>
+    </div>
+    
+    <section class="Seccion-sobreMi animate-on-scroll fade-in-up" id="sobre-mi">
+        <h2>About Me</h2>
+        <p><span style="font-weight: 700;">I am a design and technology enthusiast:</span>  User Interface and User Experience Designer with technical training in Programming.
+         <br> <br> <span style="font-weight: 700;">M</span>y passion lies in innovating and sketching ideas to bring to life digital product interfaces that are not only visually appealing but also intuitive and functional. I believe that the core of a great product is its people, so I constantly study their reactions and behaviors when interacting with it, transforming those observations into valuable insights. I am actively seeking to improve my skills every day, merging the creative perspective of design with the logical thinking of development to create coherent, viable, and user-centered digital solutions.
+           <br> <br> 
+           Thank you for visiting my little corner of the web. I'm excited to share more of my career with you!
+        </p>
+        <button>Download CV<img class="btn-download-img" src="/img/Icon Descargar.png" alt="" width="20px" height="20px"></button>
+    </section>
+
+    <section class="Seccion-Habilidades animate-on-scroll fade-in-up" id="habilidades">
+        <div> 
+         <h2>Skills</h2>
+         <p>My Toolbox and Things I Can Do.</p>
+        </div>
+       <article class="desarrollo-web">
+        <p>Web Development</p>
+
+        <div>
+         <img src="/img/Icon HTML.png" alt="Icono Html" >
+         <p class="nombre-icon"><span style="opacity: 0;">.</span>HTML</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon CSS.png" alt="Icono css">
+         <p class="nombre-icon"><span style="opacity: 0;">..</span>CSS</p>
+        </div>
+
+        <div>
+         <img src="/img/icon js.png" alt="Icono Javascript" >
+         <p class="nombre-icon">Javascript</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon React.png" alt="Icono ReactJS">
+         <p class="nombre-icon">ReactJS</p>
+        </div>
+       </article>
+
+       <article class="DiseñoUIUX">
+        <p>UI UX Design</p>
+
+        <div>
+         <img src="/img/Icon figma.png" alt="Icono Figma">
+         <p class="nombre-icon">Figma</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon photoshop.png" alt="Icono Photoshop">
+         <p class="nombre-icon">Photoshop</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon ilustrador.png" alt="Icono Ilustrator">
+         <p class="nombre-icon">Ilustrator</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon XD.png" alt="Icono Adobe XD">
+         <p class="nombre-icon">Adobe XD</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Sketch.png" alt="Icono Sketch">
+         <p class="nombre-icon">Sketch</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Miro.png" alt="Icono Miro">
+         <p class="nombre-icon">Miro</p>
+        </div>
+       </article>   
+       
+       <article class="extra">
+        <p>Extra</p>
+        <div>
+         <img src="/img/Icon Git.png" alt="Icono Git">
+         <p class="nombre-icon"><span style="opacity: 0;">..</span>Git</p>
+        </div>
+
+        <div>
+         <img src="/img/Icon Docker.png" alt="Icono Docker">
+         <p class="nombre-icon">Docker</p>
+        </div>
+       </article>
+    </section>
+
+     <section class="Seccion-Proyectos animate-on-scroll fade-in-up" id="proyecto">
+        <h2>Projects</h2>
+        <p>A selection of small projects I built</p>
+        <article>
+            <div>
+                <img src="/img/Imagen Proyecto Agro.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Agro XP</h3>
+             <p>AgroXP is a project I completed for my final degree project. It's an agronomist's website designed to showcase agricultural services and products, and also includes a simple contact form. The website's challenge was to move away from the typical brown and green design. This project was developed using technologies such as <strong>Figma</strong> and <strong>Photoshop</strong>For design (HTML, CSS, Javascript) For development</p>
+             <div>
+                <img src="/img/Icon HTML.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon CSS.png" alt="" width="30px" height="30px"> 
+                <img src="/img/icon js.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="" width="30px" height="30px"> 
+                <img src="/img/Icon photoshop.png" alt="" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">View in Repository</button>
+             <button class="Ver-Figma">View in Figma</button>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="/img/Instituto web 2.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Instituto SSC Frames</h3>
+             <p>Instituto Superior San Carlos, This is the creation of a web prototype for an institute whose main functionalities are registration through forms and course purchases. This prototype was sold to a programmer at the National University of Cordoba. This project was developed using technologies such as<strong>(Figma, Miro, Photoshop)</strong> </p>
+             <div>
+                <img src="/img/Icon Miro.png" alt="Miro" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="Figma" width="30px" height="30px"> 
+                <img src="/img/Icon photoshop.png" alt="Photoshop" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">View in Repository</button>
+             <button class="Ver-Figma">View in Figma</button>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <img src="/img/Web Space 2.png" width="300px" height="300px" alt="">
+            </div>
+            <div>
+             <h3>Web Space</h3>
+             <p>Web Space is a small project about creating a menu unlike any other. This menu presents options with photographs or icons scattered across the screen, designed for small websites to make them easier to recognize. This project was developed using technologies such as <strong>(Figma, Illustrator)</strong> y <strong>(Html Css y Javascript)</strong> </p>
+             <div>
+                <img src="/img/Icon HTML.png" alt="HTML" width="30px" height="30px"> 
+                <img src="/img/Icon CSS.png" alt="CSS" width="30px" height="30px"> 
+                <img src="/img/icon js.png" alt="Javascript" width="30px" height="30px"> 
+                <img src="/img/Icon figma.png" alt="Figma" width="30px" height="30px"> 
+                <img src="/img/Icon ilustrador.png" alt="Ilustrator" width="30px" height="30px">
+            </div>
+             <button class="Ver-Repositorio">View in Repository</button>
+             <button class="Ver-Figma">View in Figma</button>
+            </div>
+        </article>
+    </section> 
+
+    <section class="Seccion-Contacto animate-on-scroll fade-in-up" id="contacto">
+        <h2>Contacts</h2>
+        <p>Contact me and I will respond as soon as possible.</p>
+        <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+                <label for="nombre">Name</label>
+                <input id="nombre" name="name" class="I-Nombre" type="text" maxlength="100" placeholder="Your name" required />
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" class="I-Email" type="email" maxlength="100" placeholder="@Example.com" required />
+            </div>
+            <div class="form-row">
+                <label for="mensaje">Message</label>
+                <textarea id="mensaje" name="message" class="I-Mensaje" maxlength="500" placeholder="Write your menssaje" required></textarea>
+            </div>
+            <div class="form-row buttons">
+                <button class="I-Enviar" type="submit">Send</button>
+            </div>
+        </form>
+
+        <div class="contact-method">
+            <label for="">Contact me via WhatsApp</label>
+            <a href="https://wa.me/5493877667141" target="_blank"><button class="contact-btn1"><img src="/img/Icon Whatsapp.png" alt="" width="50px" height="50px">My Whatsapp</button></a> 
+        </div>
+
+        <div class="contact-method">
+            <label for="">Contact me via LinkedIn</label>
+          <a href="http://www.linkedin.com/in/joel-mancilla-aa95a0341" target="_blank" rel="noopener noreferrer"><button class="contact-btn2"><img src="/img/Icon LinkedIn.png" alt="" width="50px" height="50px">My LinkedIn</button></a>  
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <cite>© 2022 - 2025 | Design and programming by Joel Mancilla</cite>
+</footer>
+
+    
+<div class="grid-overlay">
+  <div></div><div></div><div></div><div></div><div></div><div></div>
+  <div></div><div></div><div></div><div></div><div></div><div></div>
+</div>
+</body>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializar EmailJS
+    emailjs.init('lfGfrq8iiPzU6Tlka');
+    
+    const form = document.querySelector('.contact-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const boton = this.querySelector('.I-Enviar');
+        const botonTextOriginal = boton.textContent;
+        
+        // Mostrar estado de carga
+        boton.textContent = 'sending...';
+        boton.disabled = true;
+        
+        try {
+          console.log('sending form...');
+          
+          // Obtener los datos del formulario para depuración
+          const formData = new FormData(form);
+          const formObject = Object.fromEntries(formData.entries());
+          console.log('Datos del formulario:', formObject);
+          
+          // Enviar el formulario
+          const response = await emailjs.sendForm(
+            'default_service', 
+            'template_yrtb0o5', 
+            form
+          );
+          
+          console.log('Éxito!', response);
+          alert('¡Mensaje enviado correctamente!');
+          form.reset();
+          
+        } catch (error) {
+          // Depuración detallada del error
+          console.error('Error detallado:', error);
+          console.error('Código de error:', error.status);
+          console.error('Texto del error:', error.text);
+          
+          // Mensajes específicos según el tipo de error
+          let mensajeError = 'Error sending. Please try again.';
+          
+          if (error.status === 400) {
+            mensajeError = 'Service configuration error. Please verify your credentials.';
+          } else if (error.status === 401) {
+            mensajeError = 'Invalid or expired API key.';
+          } else if (error.status === 403) {
+            mensajeError = 'Service disabled or without permissions.';
+          } else if (error.status === 429) {
+            mensajeError = 'Too many attempts. Please wait a few minutes.';
+          } else if (error.status === 500) {
+            mensajeError = 'EmailJS server error. Please try again later.';
+          }
+          
+          alert('Error: ' + mensajeError);
+          
+        } finally {
+          // Restaurar el botón
+          boton.textContent = botonTextOriginal;
+          boton.disabled = false;
+        }
+      });
+    }
+  });
+</script>
+
+
+</html>
